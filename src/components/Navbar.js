@@ -14,10 +14,6 @@ export default function Navbar(props) {
             <a className="nav-link " aria-current="page" href="#"><strong>Home</strong></a>
           </li>   
         </ul>
-        {/* <form className="d-flex">
-          <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-          <button className="btn btn-outline-success" type="submit">Search</button>
-        </form> */}
           <label className="form-check-label" htmlFor="flexSwitchCheckDefault" ><strong>Light Mode Enabled&nbsp;&nbsp;</strong></label>
           <div className={`form-check form-switch text-${props.mode==='dark'?'light':'light'}`}>
           <input className="form-check-input" onClick={props.toggleMode}  type="checkbox" role="switch" id="flexSwitchCheckDefault" />
