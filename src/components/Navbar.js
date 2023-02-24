@@ -1,14 +1,5 @@
 
-
-
-
-
 export default function Navbar(props) {
-
-  
-  
-  
-
   
   return (
     <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
@@ -21,16 +12,16 @@ export default function Navbar(props) {
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
           <li className="nav-item">
             <a className="nav-link " aria-current="page" href="#"><strong>Home</strong></a>
-          </li>
-          
+          </li>   
         </ul>
         {/* <form className="d-flex">
           <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
           <button className="btn btn-outline-success" type="submit">Search</button>
         </form> */}
-          <div className={`form-check form-switch text-${props.mode==='light'?'dark':'light'}`}>
+          <label className="form-check-label" htmlFor="flexSwitchCheckDefault" ><strong>Light Mode Enabled&nbsp;&nbsp;</strong></label>
+          <div className={`form-check form-switch text-${props.mode==='dark'?'light':'light'}`}>
           <input className="form-check-input" onClick={props.toggleMode}  type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-         <label className="form-check-label" htmlFor="flexSwitchCheckDefault" >Enable Dark Mode</label>
+         <label className="form-check-label" htmlFor="flexSwitchCheckDefault" >Dark Mode Enabled</label>
         </div>
       </div>
     </div>
